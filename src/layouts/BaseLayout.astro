@@ -1,0 +1,20 @@
+---
+import Navbar from "../components/Navbar.astro"
+const {title} = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Handcraft Items | {title}</title>
+    	<style global>
+			@import "../styles/input.css";
+	</style>
+	</head>
+<body class="">
+  <header class="bg-gray-900">
+    <Navbar />
+  </header>
+  <slot />
+</body>
+</html>

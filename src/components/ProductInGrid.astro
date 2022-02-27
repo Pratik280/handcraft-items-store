@@ -1,0 +1,9 @@
+---
+const { name, price, imgName } = Astro.props;
+---
+<div>
+  <img class="aspect-square block h-52 object-cover max-w-full" src={imgName} alt="" />
+  <p class="font-serif text-slate-200 text-center my-1">{name}</p>
+  <p class="font-serif text-slate-200 font-bold text-lg text-center my-2">Rs. {price}</p>
+  <a class="font-serif text-slate-200 text-lg text-center my-2">Show More</a>
+</div>
