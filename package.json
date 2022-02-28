@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "build": "rm -rf dist/ && astro build",
+    "preview": "rm -rf dist/ && astro preview",
     "deploy": "gh-pages -d dist"
   },
   "homepage": "https://pratik280.github.io/handcraft-items-store",
