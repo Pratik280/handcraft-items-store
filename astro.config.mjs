@@ -8,5 +8,6 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   buildOptions: {
     site: "https://pratik280.github.io/handcraft-items-store/",
     pageUrlFormat: "file",
+    sitemap: true,
   },
 });
