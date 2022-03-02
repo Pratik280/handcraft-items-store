@@ -4,14 +4,13 @@ import ProductInGrid from '../components/ProductInGrid.astro'
 const title = "All Products"
 const response = await fetch("./src/data.json")
 const productsData = await response.json()
-console.log(productsData)
 ---
 <BaseLayout title={title}>
-  <div class="bg-gray-800 flex justify-center items-center">
+  <main class="bg-clr-dark flex justify-center items-center">
     <ul class="custom-container flex-center py-10 flex gap-4 flex-row flex-wrap">
       {productsData.map((item) => (
         <li><ProductInGrid name={item.name} price={item.price} imgName={item.imgName}/></li>
-    ))}
+      ))}
     </ul>
-  </div>
+  </main>
 </BaseLayout>
