@@ -6,10 +6,10 @@ const response = await fetch("./src/data.json")
 const productsData = await response.json()
 ---
 <BaseLayout title={title}>
-  <main class="bg-clr-dark flex justify-center items-center">
+  <main class="bg-clr-primary-dark flex justify-center items-center">
     <ul class="custom-container flex-center py-10 flex gap-4 flex-row flex-wrap">
       {productsData.map((item) => (
-        <li><ProductInGrid name={item.name} price={item.price} imgName={item.imgName}/></li>
+        <li class=""><ProductInGrid name={item.name} price={item.price} imgName={item.imgName}/></li>
       ))}
     </ul>
   </main>
