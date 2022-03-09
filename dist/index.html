@@ -3,12 +3,12 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Handcraft Items | Home</title>
     	
-	<link rel="stylesheet" href="./assets/index.950d6d5f.css"></head>
+	<link rel="stylesheet" href="./assets/products.6c4b2310.css"></head>
 <body class="">
-  <header class="bg-clr-darker">
-    <nav class="py-6 custom-container text-center flex justify-between items-center">
-  <h1 class="text-neutral-50 text-2xl font-serif upercase"><a href="/">Handcraft Items</a></h1>
-  <div id="nav-content" class="absolute md:static right-0 top-[80px] w-full py-6 bg-clr-darker translate-y-[-150%] transition-transform md:transform-none flex gap-6 flex-col items-center md:flex-row md:justify-end md:items-center">
+  <header class="bg-clr-secondary-dark">
+    <nav class="py-6 md:py-2 custom-container text-center flex justify-between items-center">
+  <h1><a class="text-neutral-50 text-2xl font-serif" href="/">Handcraft Baskets</a></h1>
+  <div id="nav-content" class="bg-clr-secondary-dark absolute md:static right-0 top-[80px] w-full py-6 translate-y-[-150%] transition-transform md:transform-none flex gap-6 flex-col items-center md:flex-row md:2 md:justify-end md:items-center">
     <ul class="flex gap-6 flex-col justify-evenly md:flex-row md:justify-between md:items-center">
       <li><a class="text-neutral-100 text-base font-sans hover:text-neutral-200 hover:underline hover:underline-offset-4 " href="/products">Store</a></li>
       <li><a class="text-neutral-100 text-base font-sans hover:text-neutral-200 hover:underline hover:underline-offset-4 " href="/about">About</a></li>
@@ -25,8 +25,8 @@
     <path id="burger-lines" class="" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
     <path id="burger-x" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-</svg>
-</svg>
+    </svg>
+    </svg>
   </button>
 </nav>
 <script>
@@ -35,14 +35,13 @@
   const burgerX = document.getElementById("burger-x")
   const navContent = document.getElementById("nav-content")
   navBtn.addEventListener("click", (e)=>{
-    console.log("clicked")
     navContent.classList.toggle("translate-y-[-150%]")
     burgerLines.classList.toggle("hidden")
     burgerX.classList.toggle("hidden")
   })
 </script>
   </header>
-  <main class="bg-gray-100 flex justify-center items-center">
+  <main class="bg-clr-light flex justify-center items-center">
     <a href="/products" class="text-slate-50">Shop Now</a>
   </main>
 </body></html>
