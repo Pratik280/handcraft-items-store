@@ -9,7 +9,7 @@ const productsData = await response.json()
   <main class="bg-clr-primary-dark flex justify-center items-center">
     <ul class="custom-container flex-center py-10 flex gap-4 flex-row flex-wrap">
       {productsData.map((item) => (
-        <li class=""><ProductInGrid name={item.name} price={item.price} imgName={item.imgName}/></li>
+        <li class="grow sm:grow-0"><ProductInGrid name={item.name} price={item.price} imgName={item.imgName}/></li>
       ))}
     </ul>
   </main>
